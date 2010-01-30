@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Hello, Rails!</title>
+  </head>
+  <body>
+    <h1>Hello from Rails!</h1>
+    <p>
+      It is now: <%= @time %>
+    </p>
+    <li>
+      <ul>Time to say <%= link_to "Goodbye!", :action=>:goodbye %></ul>
+    </li>
+    <li>
+      <ul>Files <%= link_to "Gimme your Files!", :action=>:files %></ul>
+    </li>
+  </body>
+</html>

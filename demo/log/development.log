@@ -1,0 +1,387 @@
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-01-16 01:33:19) [GET]
+  [4;36;1mSQL (1.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 111ms (View: 9, DB: 1) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-16 01:46:08) [GET]
+
+ActionController::RoutingError (No route matches "/say/hello" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-16 01:47:30) [GET]
+
+ActionController::RoutingError (No route matches "/say/hello" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 01:48:04) [GET]
+
+ActionView::MissingTemplate (Missing template say/hello.erb in view path app/views):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 01:53:12) [GET]
+Rendering say/hello
+Completed in 55ms (View: 38, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 01:58:06) [GET]
+Rendering say/hello
+Completed in 321ms (View: 317, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 02:10:23) [GET]
+Rendering say/hello
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 02:10:28) [GET]
+Rendering say/hello
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 02:10:45) [GET]
+Rendering say/hello
+Completed in 15ms (View: 2, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 02:10:46) [GET]
+Rendering say/hello
+Completed in 20ms (View: 1, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 02:10:47) [GET]
+Rendering say/hello
+Completed in 15ms (View: 1, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 02:15:39) [GET]
+Rendering say/hello
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-01-16 20:41:03) [GET]
+Rendering say/goodbye
+Completed in 30ms (View: 24, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-01-16 20:44:40) [GET]
+Rendering say/goodbye
+Completed in 30ms (View: 6, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 20:44:41) [GET]
+Rendering say/hello
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-01-16 20:44:43) [GET]
+Rendering say/goodbye
+Completed in 20ms (View: 1, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 20:44:44) [GET]
+Rendering say/hello
+Completed in 17ms (View: 2, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-01-16 20:44:46) [GET]
+Rendering say/goodbye
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 20:44:48) [GET]
+Rendering say/hello
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-01-16 20:44:50) [GET]
+Rendering say/goodbye
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 20:44:51) [GET]
+Rendering say/hello
+Completed in 14ms (View: 1, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-01-16 20:45:12) [GET]
+Rendering say/goodbye
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 20:45:14) [GET]
+Rendering say/hello
+Completed in 16ms (View: 1, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-01-16 20:45:17) [GET]
+Rendering say/goodbye
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 20:45:18) [GET]
+Rendering say/hello
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 20:49:39) [GET]
+Rendering say/hello
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-01-16 20:49:41) [GET]
+Rendering say/goodbye
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 20:49:44) [GET]
+Rendering say/hello
+Completed in 16ms (View: 1, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-01-16 20:49:46) [GET]
+Rendering say/goodbye
+Completed in 27ms (View: 2, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 20:49:47) [GET]
+Rendering say/hello
+Completed in 21ms (View: 1, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-01-16 20:49:48) [GET]
+Rendering say/goodbye
+Completed in 21ms (View: 1, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 20:49:50) [GET]
+Rendering say/hello
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 20:50:04) [GET]
+Rendering say/hello
+Completed in 32ms (View: 27, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-01-16 22:33:35) [GET]
+Rendering say/goodbye
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 22:33:36) [GET]
+Rendering say/hello
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-01-16 22:33:38) [GET]
+Rendering say/goodbye
+Completed in 19ms (View: 15, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 22:33:40) [GET]
+Rendering say/hello
+Completed in 24ms (View: 2, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-01-16 22:33:44) [GET]
+Rendering say/goodbye
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 22:33:46) [GET]
+Rendering say/hello
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-01-16 22:33:49) [GET]
+Rendering say/goodbye
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 22:33:51) [GET]
+Rendering say/hello
+Completed in 15ms (View: 2, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 22:34:49) [GET]
+Rendering say/hello
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 22:35:29) [GET]
+Rendering say/hello
+Completed in 22ms (View: 17, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 22:35:58) [GET]
+Rendering say/hello
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 22:35:59) [GET]
+Rendering say/hello
+Completed in 23ms (View: 1, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 22:36:00) [GET]
+Rendering say/hello
+Completed in 15ms (View: 2, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 22:36:02) [GET]
+Rendering say/hello
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 22:36:04) [GET]
+Rendering say/hello
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 22:36:19) [GET]
+Rendering say/hello
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 22:57:30) [GET]
+Rendering say/hello
+Completed in 45ms (View: 41, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-01-16 22:57:33) [GET]
+Rendering say/goodbye
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 22:57:34) [GET]
+Rendering say/hello
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#files (for 127.0.0.1 at 2010-01-16 22:57:36) [GET]
+Rendering say/files
+
+ActionView::TemplateError (undefined local variable or method `files' for #<ActionView::Base:0xb734837c>) on line #8 of app/views/say/files.html.erb:
+5:   <body>
+6:     <h1>Your files, sir</h1>
+7:     <ol>
+8:     <% files.each do |name| %>
+9:       <li> <%= name -%> </li>
+10:     <% end %>
+11:     </ol>
+
+    app/views/say/files.html.erb:8
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.8ms)
+Rendered rescues/_request_and_response (12.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SayController#files (for 127.0.0.1 at 2010-01-16 22:58:12) [GET]
+Rendering say/files
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/say/files]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-01-16 22:58:19) [GET]
+Rendering say/hello
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#files (for 127.0.0.1 at 2010-01-16 22:58:20) [GET]
+Rendering say/files
+Completed in 22ms (View: 17, DB: 0) | 200 OK [http://localhost/say/files]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-01-16 22:58:23) [GET]
+Rendering say/goodbye
+Completed in 79ms (View: 2, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#files (for 127.0.0.1 at 2010-01-16 22:58:25) [GET]
+Rendering say/files
+Completed in 18ms (View: 1, DB: 0) | 200 OK [http://localhost/say/files]
+
+
+Processing SayController#files (for 127.0.0.1 at 2010-01-16 23:03:34) [GET]
+Rendering say/files
+
+ActionView::TemplateError (undefined local variable or method `files' for #<ActionView::Base:0xb737a28c>) on line #8 of app/views/say/files.html.erb:
+5:   <body>
+6:     <h1>Your files, sir</h1>
+7:     <ol>
+8:     <% files.each do |name| %>
+9:       <li> <%= name -%> </li>
+10:     <% end %>
+11:     </ol>
+
+    app/views/say/files.html.erb:8
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (64.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SayController#files (for 127.0.0.1 at 2010-01-16 23:03:52) [GET]
+Rendering say/files
+Completed in 32ms (View: 6, DB: 0) | 200 OK [http://localhost/say/files]
