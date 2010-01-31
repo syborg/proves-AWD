@@ -7,5 +7,6 @@
   </tr>
 </table>
 
-<%= button_to 'Checkout', :action=>:checkout %>
+<!-- veure http://www.pragprog.com/wikis/wiki/Pt-F-1 -->
+<%= button_to "Checkout", {:action => :checkout} unless (request.request_uri == '/store/checkout') %>
 <%= button_to 'Empty cart', :action=>:empty_cart %>

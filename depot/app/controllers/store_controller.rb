@@ -29,12 +29,29 @@ class StoreController < ApplicationController
     session[:cart]=nil
     redirect_to_index
   end
-  
+
+
+#  def checkout
+#    if @cart.items.empty?
+#      redirect_to_index "Your cart is empty"
+#    else
+#      @order=Order.new
+#    end
+#  end
+
+  #veure http://www.pragprog.com/wikis/wiki/Pt-F-1 (Martin) 
   def checkout
     if @cart.items.empty?
-      redirect_to_index "Your cart is empty"
+      redirect_to_index('Your cart is empty')
     else
-      @order=Order.new
+      @order = Order.new(params[:order])
+      if request.post? && params[:order]              
+        @order.add_line_items_from_cart(@cart)
+        if @order.save
+          session[:cart] = nil
+          redirect_to_index('Thank you for your order')
+        end
+      end
     end
   end
   

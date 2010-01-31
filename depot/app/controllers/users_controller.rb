@@ -60,11 +60,14 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
 
     respond_to do |format|
-      if @user.update_attributes(params[:user])
+      # hem de comprovar que no es posa un password blank perque en aquests casos s'actualitza sense canviar el password
+      if (@user.update_attributes(params[:user]) if !params[:user][:password].blank?)
+      #if @user.update_attributes(params[:user])
         flash[:notice] = "User #{@user.name} was successfully updated."
         format.html { redirect_to :action=>:index }
         format.xml  { head :ok }
       else
+        flash[:notice] = "User #{@user.name} ha de tenir un password no buid"
         format.html { render :action => "edit" }
         format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
       end
