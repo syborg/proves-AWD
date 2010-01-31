@@ -37,7 +37,15 @@ class User < ActiveRecord::Base
     end
     user
   end
-  
+
+  #callback despres de delete. 
+  #Aqui s'evita esborrar el darrer usuari (i en aquest cas administrador que pot modificar dades) generant una exception (raise) que fa que es faci un rollback de la transaccio automàticament
+  def after_destroy 
+    if User.count.zero?
+      raise "Can't delete last user"
+    end   
+  end
+
   private
   
   def password_non_blank

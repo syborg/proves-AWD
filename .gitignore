@@ -1,3 +1,4 @@
 arxius_originals/*
 *.sqlite3
 *~
+*.log
