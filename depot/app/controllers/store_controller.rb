@@ -10,6 +10,10 @@ class StoreController < ApplicationController
       session[:counter]+=1
     end
     @session_counter=session[:counter]
+    respond_to do |format|
+      format.html
+      format.xml { render :xml => @products }
+    end
   end
   
   def add_to_cart
