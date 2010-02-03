@@ -2,4 +2,19 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  layout:
+    title:  "Pragmatic Bookshelf"
+    side:
+      home: "Home"
+      questions:  "Questions"
+      news: "News"
+      contact: "Contact"
+    cart:
+      title:  "Your cart"
+      button:
+        empty: "empty cart"
+        checkout: "checkout"
+  main:
+    title: "Your Pragmatic Catalog!"
+    button:
+      add: "Add to cart"
