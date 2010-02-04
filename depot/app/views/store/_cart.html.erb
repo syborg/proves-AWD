@@ -1,9 +1,9 @@
-<div class="cart-title">Your Pragmatic Cart</div>
+<div class="cart-title"><%= I18n.t 'layout.cart.title' %></div>
 <table>
   <%= render :partial=>'cart_item', :collection=>cart.items %>
   <tr class="total-line">
     <td colspan="2">Total</td>
-    <td class="total-cell"><%= number_to_currency(@cart.total_price, :format=>"%n%u", :unit=>'€') %> </td>
+    <td class="total-cell"><%= number_to_currency(@cart.total_price) %> </td>
   </tr>
 </table>
 

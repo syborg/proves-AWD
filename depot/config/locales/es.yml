@@ -18,3 +18,45 @@ es:
     title: "El cataleg Pragmatic!!"
     button:
       add: "Afegeix al carret"
+      
+  number:
+    currency:
+      format:
+        unit: "$US"
+        precision: 2
+        separator: ","
+        delimiter: "."
+        format: "%n&nbsp;%u"
+        
+  checkout:
+    legend: "Si us plau entri le seves dades"
+    name: "Nom"
+    address: "Addreça"
+    email: "E-mail"
+    pay_type: "Pagar amb"
+    pay_prompt: "Seleccioni un mètode de pagament"
+    submit: "Fer Comanda"
+    
+  activerecord:
+    errors:
+      template:
+        header:
+          one: "1 error ha impedit que {{model}} es guardi"
+          other: "{{count}} errors han impedit que aquest {{model}} es guardi"
+        body: "Hi ha problemes als camps següents:"
+      messages:
+        inclusion: "no està inclos a la llista"
+        blank: "no pot quedar en blanc"
+        body: "Hi ha problemes en els següents camps"
+    models:
+      order: "comanda"
+    attributes:
+      order:
+        address: "Direcció"
+        name: "Nom"
+        email: "E-mail"
+        pay_type: "Forma de pagament"
+
+  flash:
+    thanks: "Gracies per la seva comanda"
+    
