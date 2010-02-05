@@ -10,6 +10,7 @@
       <td class='list-description'>
         <dt><%= h product.title %></dt>
         <dd><%= h truncate(product.description.gsub(/<.*?>/,''), :length=>80) %></dd>
+        <dd><%= h product.locale %></dd>
       </td>
   
       <td class='list-actions'>

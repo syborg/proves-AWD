@@ -11,7 +11,7 @@ class Product < ActiveRecord::Base
   validates_length_of :title, :minimum=>10, :message=>'minim 10 perfa'
   
   def self.find_products_for_sale
-    find(:all, :order=>"title")
+    find(:all, :order=>"title", :conditions=>{:locale=>I18n.locale})
   end
   
   protected
