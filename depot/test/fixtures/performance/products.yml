@@ -1,0 +1,10 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+<% 1.upto(1000) do |i| %>
+product_<%= i %>:
+  id: <%= i %>
+  title: Product Number <%= i %>
+  description: El meu producte
+  image_url: product.gif
+  price: 1234
+<% end %>
